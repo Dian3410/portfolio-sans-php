@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio – Dian Diallo</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="dark">
+
+<canvas id="network"></canvas>
+
+<header>
+  <div class="logo">Dian Diallo</div>
+
+  <nav class="nav-right">
+    <a href="#accueil" class="home-btn"><i class="fa fa-home"></i></a>
+    <a href="#apropos">À propos</a>
+    <a href="#competences">Compétences</a>
+    <a href="#formation">Formation</a>
+    <a href="#experience">Expérience</a>
+    <a href="#projets">Projets</a>
+    <a href="#contact">Contact</a>
+    <a href="CV.pdf" download>CV</a>
+
+    <button id="themeToggle">🌙</button>
+    <select id="langSelect">
+      <option value="fr">FR</option>
+      <option value="en">EN</option>
+    </select>
+  </nav>
+</header>
+
+<!-- ACCUEIL -->
+<section id="accueil" class="hero">
+  <p data-fr="Bonjour, je suis" data-en="Hello, I am">Bonjour, je suis</p>
+  <h1>Dian Diallo</h1>
+
+  <h3 id="dynamicText" class="dynamic-blue"></h3>
+
+  <!-- TEXTE AJOUTÉ (VISIBLE) -->
+  <p class="hero-desc"
+     data-fr="Passionné par les systèmes, réseaux et la cybersécurité. En formation pour devenir administrateur systèmes et réseaux spécialisé dans la sécurité des systèmes informatiques."
+     data-en="Passionate about systems, networks and cybersecurity. Currently training to become a systems and network administrator specialized in IT security.">
+     Passionné par les systèmes, réseaux et la cybersécurité. En formation pour devenir administrateur systèmes et réseaux spécialisé dans la sécurité des systèmes informatiques.
+  </p>
+
+  <div class="hero-buttons">
+    <a href="#competences" class="btn-fill">Compétences</a>
+    <a href="#contact" class="btn-fill outline">Contact</a>
+  </div>
+
+  <div class="social-links">
+    <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/Dian3410" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="CV.pdf" download><i class="fa fa-file-pdf"></i></a>
+  </div>
+</section>
+
+<!-- A PROPOS -->
+<section id="apropos">
+  <h2>À propos de moi</h2>
+
+  <div class="grid">
+    <div class="card">
+      <p data-fr="Étudiant en BTS SIO option SISR à Chartres, je suis animé par une véritable passion pour les systèmes, les réseaux et la cybersécurité. J’aime comprendre, concevoir et sécuriser des infrastructures tout en analysant les vulnérabilités."
+         data-en="I am an IT student in Chartres with a strong interest in systems, networks, and cybersecurity. I am developing practical skills in configuring infrastructures, securing network environments, and analyzing vulnerabilities.">
+         Étudiant en BTS SIO option SISR à Chartres, je suis animé par une véritable passion pour les systèmes, les réseaux et la cybersécurité. J’aime comprendre, concevoir et sécuriser des infrastructures tout en analysant les vulnérabilités.      </p>
+    </div>
+
+    <div class="card">
+      <p data-fr="Au-delà des compétences techniques, j’accorde une grande importance au travail d’équipe et au partage des connaissances. Curieux de nature, j’aime analyser les problématiques en profondeur afin de proposer des solutions pertinentes et efficaces."
+         data-en="Beyond technical skills, I place great importance on teamwork and knowledge sharing. Naturally curious, I enjoy exploring problems in depth to provide relevant and effective solutions.">
+         Au-delà des compétences techniques, j’accorde une grande importance au travail d’équipe et au partage des connaissances. Curieux de nature, j’aime analyser les problématiques en profondeur afin de proposer des solutions pertinentes et efficaces.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- COMPETENCES -->
+<section id="competences">
+<h2>Compétences</h2>
+
+<div class="grid">
+  <div class="card">
+    <h3>Systèmes</h3>
+    <div class="tags">
+      <span>Virtualisation</span><span>Active Directory</span>
+      <span>Windows</span><span>Linux</span>
+      <span>Windows Server</span><span>Linux Server</span><span>Cisco</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Réseaux</h3>
+    <div class="tags">
+      <span>DNS</span><span>DHCP</span><span>NAT | PAT</span>
+      <span>Routage</span><span>VLAN</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Cybersécurité</h3>
+    <div class="tags">
+      <span>Sensibilisation</span><span>Données personnelles</span><span>Diagnostic</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Programmation</h3>
+    <div class="tags">
+      <span>HTML/CSS</span><span>JavaScript</span><span>PHP</span>
+      <span>C#</span><span>Python</span>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- FORMATION -->
+<section id="formation">
+<h2>Formation</h2>
+
+<div class="card">
+  <h3>BTS SIO – Option SISR</h3>
+  <p>2025 – 2027</p>
+  <p>Lycée Général et Technologique Fulbert – Chartres</p>
+  <p>Solutions d’Infrastructure, Systèmes et Réseaux</p>
+</div>
+
+<div class="card">
+  <h3>Baccalauréat Scientifique</h3>
+  <p>2025</p>
+  <p>Lycée Mbao</p>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<h2>Expérience</h2>
+
+<div class="card">
+  <h3>Technicien support – Zentech (Sénégal)</h3>
+  <p>2022 – 2023</p>
+  <p>
+    Installation et configuration de systèmes Windows et Linux.<br>
+    Maintenance de postes informatiques.<br>
+    Assistance utilisateurs (niveau 1).
+  </p>
+</div>
+
+<div class="card">
+  <h3>passetonhackd’abord – Capture The Flag & défis cybersécurité</h3>
+  <p>Janvier 2026</p>
+  <p>
+    Participation à des épreuves de type Capture The Flag et défis en cybersécurité
+    dans le cadre de l’événement « passetonhackd’abord ».
+  </p>
+</div>
+</section>
+
+<!-- PROJETS -->
+<section id="projets">
+<h2>Projets</h2>
+
+<div class="grid">
+  <div class="card">
+    <h3>Morpion IA</h3>
+    <div id="morpion">
+      <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+      <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+      <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Labyrinthe</h3>
+    <p>Conception d’un jeu de labyrinthe en ligne (projet à améliorer).</p>
+    <a href="https://github.com/Dian3410/Labyrinthe.git" target="_blank">GitHub</a>
+  </div>
+
+  <div class="card">
+    <h3>Installation Debian (mode expert)</h3>
+    <p>Documentation sur l’installation d’une VM Debian.</p>
+  </div>
+
+  <div class="card">
+    <h3>Infrastructure VLAN</h3>
+    <p>Mise en place d’un VLAN avec nom de domaine personnalisé.</p>
+  </div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+
+<div class="grid">
+  <div class="card">
+    <p>📧 contact@dian-portfolio.fr</p>
+    <p>📍 Chartres, France</p>
+  </div>
+
+  <div class="card">
+    <p><strong>Connectons-nous !</strong></p>
+    <p>Consultez mon profil professionnel, mes projets ou téléchargez mon CV.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Dian3410" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="CV.pdf" download><i class="fa fa-file-pdf"></i></a>
+    </div>
+  </div>
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

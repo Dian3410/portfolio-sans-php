@@ -1,0 +1,288 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #020617;
+  color: #e5e7eb;
+  overflow-x: hidden;
+}
+
+/* CANVAS BACKGROUND */
+#network {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background: rgba(2, 6, 23, 0.7);
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* NAV */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-right a {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 0;
+}
+
+.nav-right a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #38bdf8;
+  transition: width 0.3s;
+}
+
+.nav-right a:hover::after {
+  width: 100%;
+}
+
+.home-btn {
+  font-size: 1.1rem;
+}
+
+#themeToggle,
+#langSelect {
+  background: transparent;
+  border: 1px solid #38bdf8;
+  color: inherit;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+section {
+  padding: 120px 40px 90px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.2rem;
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.dynamic-blue {
+  color: #38bdf8;
+  font-size: 1.4rem;
+  margin: 15px 0;
+  min-height: 30px;
+}
+
+.hero-desc {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  opacity: 0.9;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-fill {
+  padding: 12px 34px;
+  border-radius: 30px;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-fill:hover {
+  background: #38bdf8;
+  color: #020617;
+}
+
+.btn-fill.outline {
+  background: transparent;
+}
+
+/* SOCIAL */
+.social-links {
+  margin-top: 25px;
+}
+
+.social-links a {
+  color: #05ad3a;
+  font-size: 1.5rem;
+  margin: 0 12px;
+  transition: transform 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.25);
+}
+
+/* =========================
+   À PROPOS – STYLE SPÉCIAL
+========================= */
+.about-container {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  gap: 30px;
+}
+
+.about-text {
+  background: #0f172a;
+  padding: 30px 35px;
+  border-radius: 18px;
+  border-left: 5px solid #38bdf8;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  transition: transform 0.3s;
+}
+
+.about-text:hover {
+  transform: translateX(6px);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.card {
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 20px;
+  transition: transform 0.3s, border 0.3s;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+}
+
+/* TAGS */
+.tags span {
+  display: inline-block;
+  margin: 6px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid #38bdf8;
+  transition: all 0.3s;
+}
+
+.tags span:hover {
+  background: #38bdf8;
+  color: #020617;
+}
+
+/* MORPION */
+#morpion {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-top: 15px;
+}
+
+#morpion .cell {
+  height: 80px;
+  background: #020617;
+  border: 1px solid #38bdf8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}
+
+/* =========================
+   MODE CLAIR
+========================= */
+body.light {
+  background: #f8fafc;
+  color: #020617;
+}
+
+body.light header {
+  background: rgba(248, 250, 252, 0.8);
+}
+
+body.light .card,
+body.light .about-text {
+  background: #ffffff;
+  border-color: #38bdf8;
+}
+
+body.light .tags span {
+  border-color: #0ea5e9;
+}
+
+body.light #morpion .cell {
+  background: #e5e7eb;
+}
